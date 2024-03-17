@@ -1,5 +1,3 @@
-# Discord Bot
-discord
-
-# ai
-torch
+scikit-learn
+nltk
+pandas
