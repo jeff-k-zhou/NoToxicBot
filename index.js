@@ -1,7 +1,6 @@
-const { Client, GatewayIntentBits, Events, Permissions, PermissionFlagsBits } = require("discord.js");
-const axios = require("axios");
+const { Client, GatewayIntentBits, Events, PermissionFlagsBits } = require("discord.js");
+const axios = require("axios")
 require("dotenv").config()
-const util = require("util")
 
 const client = new Client({
 	intents: [
@@ -16,7 +15,7 @@ client.once(Events.ClientReady, readyClient => {
 	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 })
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
 
 client.on(Events.MessageCreate, async (message) => {
 	console.log(message.author.bot)
